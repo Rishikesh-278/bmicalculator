@@ -72,9 +72,7 @@ class _InputPageState extends State<InputPage> {
 }
 
 class IconContent extends StatelessWidget {
-  const IconContent({
-    Key? key,
-  }) : super(key: key);
+  const IconContent({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -83,9 +81,7 @@ class IconContent extends StatelessWidget {
       children: const <Widget>[
         Icon(FontAwesomeIcons.mars, size: 80),
         SizedBox(height: 15),
-        Text(
-          "MALE",
-          style: TextStyle(color: Colors.white, fontSize: 18),
+        Text("MALE", style: TextStyle(color: Colors.white, fontSize: 18),
         )
       ],
     );
