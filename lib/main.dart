@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'imput_page.dart';
-//import 'dart:ui';
 
 void main() => runApp(BMICalculator());
 
@@ -15,4 +14,3 @@ class BMICalculator extends StatelessWidget {
     );
   }
 }
-
