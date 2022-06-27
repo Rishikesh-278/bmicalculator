@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'package:bmicalculator/reusable_card.dart';
+import 'icon_content.dart';
+
 const BottomContaiterHeight = 80;
 const ExpandedResuableCardColor = Color(0XFF1D1E33);
 const BottomContainerColor = Color(0xFFEB1555);
@@ -26,13 +29,13 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(
                   colour: ExpandedResuableCardColor,
-                  CardChild: IconContent(),
+                  CardChild: IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
                 ),
               ),
               Expanded(
                 child: ReusableCard(
                   colour: ExpandedResuableCardColor,
-                  CardChild: Column(),
+                  CardChild: IconContent(icon: FontAwesomeIcons.venus,label: 'FEMALE',),
                 ),
               ),
             ],
@@ -66,42 +69,6 @@ class _InputPageState extends State<InputPage> {
             width: double.infinity,
           )
         ],
-      ),
-    );
-  }
-}
-
-class IconContent extends StatelessWidget {
-  const IconContent({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: const <Widget>[
-        Icon(FontAwesomeIcons.mars, size: 80),
-        SizedBox(height: 15),
-        Text("MALE", style: TextStyle(color: Colors.white, fontSize: 18),
-        )
-      ],
-    );
-  }
-}
-
-class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.colour, required this.CardChild});
-
-  final Color colour;
-  final Widget CardChild;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: CardChild,
-      margin: EdgeInsets.all(15),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
-        color: colour,
       ),
     );
   }
