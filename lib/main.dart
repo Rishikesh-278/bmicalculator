@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'imput_page.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(BMICalculator());
 

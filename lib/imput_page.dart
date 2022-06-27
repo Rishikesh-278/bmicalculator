@@ -25,39 +25,39 @@ class _InputPageState extends State<InputPage> {
         children: <Widget>[
           Expanded(
               child: Row(
-            children: <Widget>[
-              Expanded(
-                child: ReusableCard(
-                  colour: ExpandedResuableCardColor,
-                  CardChild: IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
+                children: <Widget>[
+                  Expanded(
+                    child: ReusableCard(
+                      colour: ExpandedResuableCardColor,
+                      CardChild: IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
                 ),
               ),
-              Expanded(
-                child: ReusableCard(
-                  colour: ExpandedResuableCardColor,
-                  CardChild: IconContent(icon: FontAwesomeIcons.venus,label: 'FEMALE',),
+                  Expanded(
+                    child: ReusableCard(
+                      colour: ExpandedResuableCardColor,
+                      CardChild: IconContent(icon: FontAwesomeIcons.venus,label: 'FEMALE',),
                 ),
               ),
             ],
           )),
           Expanded(
               child: ReusableCard(
-            colour: ExpandedResuableCardColor,
-            CardChild: Row(),
+                colour: ExpandedResuableCardColor,
+                CardChild: Row(),
           )),
           Expanded(
               child: Row(
-            children: <Widget>[
-              Expanded(
-                child: ReusableCard(
-                  colour: ExpandedResuableCardColor,
-                  CardChild: Column(),
+                children: <Widget>[
+                  Expanded(
+                    child: ReusableCard(
+                      colour: ExpandedResuableCardColor,
+                      CardChild: Column(),
                 ),
               ),
-              Expanded(
-                child: ReusableCard(
-                  colour: ExpandedResuableCardColor,
-                  CardChild: Column(),
+                  Expanded(
+                    child: ReusableCard(
+                      colour: ExpandedResuableCardColor,
+                      CardChild: Column(),
                 ),
               ),
             ],
