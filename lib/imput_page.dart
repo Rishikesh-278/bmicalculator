@@ -30,21 +30,21 @@ class _InputPageState extends State<InputPage> {
                     child: ReusableCard(
                       colour: ExpandedResuableCardColor,
                       CardChild: IconContent(icon: FontAwesomeIcons.mars, label: 'MALE'),
-                ),
-              ),
+                    ),
+                  ),
                   Expanded(
                     child: ReusableCard(
                       colour: ExpandedResuableCardColor,
                       CardChild: IconContent(icon: FontAwesomeIcons.venus,label: 'FEMALE',),
-                ),
-              ),
-            ],
-          )),
+                    ),
+                  ),
+                ],
+              )),
           Expanded(
               child: ReusableCard(
                 colour: ExpandedResuableCardColor,
                 CardChild: Row(),
-          )),
+              )),
           Expanded(
               child: Row(
                 children: <Widget>[
@@ -52,16 +52,16 @@ class _InputPageState extends State<InputPage> {
                     child: ReusableCard(
                       colour: ExpandedResuableCardColor,
                       CardChild: Column(),
-                ),
-              ),
+                    ),
+                  ),
                   Expanded(
                     child: ReusableCard(
                       colour: ExpandedResuableCardColor,
                       CardChild: Column(),
-                ),
-              ),
-            ],
-          )),
+                    ),
+                  ),
+                ],
+              )),
           Container(
             color: BottomContainerColor,
             margin: const EdgeInsets.only(top: 10),
