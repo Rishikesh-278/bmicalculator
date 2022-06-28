@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show BuildContext, Colors, Column, Icon, IconData, Key, MainAxisAlignment, SizedBox, StatelessWidget, Text, TextStyle, Widget;
 
 const labelTextStyle = TextStyle(color: Colors.white, fontSize: 18);
 
 class IconContent extends StatelessWidget {
-  const IconContent({required this.icon, required this.label});
+   const IconContent({Key? key, required this.icon, required this.label}) : super(key: key);
 
   final IconData icon;
   final String label;

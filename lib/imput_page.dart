@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:bmicalculator/reusable_card.dart';
-import 'icon_content.dart';
+import 'package:flutter/material.dart' show AppBar, BuildContext, Color, Column, Container, EdgeInsets, Expanded, GestureDetector, Key, Row, Scaffold, State, StatefulWidget, Text, Widget;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart' show FontAwesomeIcons;
+import 'package:bmicalculator/reusable_card.dart' show ReusableCard;
+import 'icon_content.dart' show IconContent;
 
 const BottomContaiterHeight = 80;
 const ActiveCardColor = Color(0XFF1D1E33);
@@ -10,17 +10,20 @@ const BottomContainerColor = Color(0xFFEB1555);
 
 enum Gender
 {
-  male, female;
+  male, female
 }
 
 class InputPage extends StatefulWidget {
+  const InputPage({Key? key}) : super(key: key);
+
   @override
   _InputPageState createState() => _InputPageState();
 }
 
 class _InputPageState extends State<InputPage> {
 
-   late Gender selectedGender;
+
+   late final Gender selectedGender;
 
   @override
   Widget build(BuildContext context) {

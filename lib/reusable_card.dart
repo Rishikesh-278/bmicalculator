@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' show BorderRadius, BoxDecoration, BuildContext, Color, Container, EdgeInsets, Key, StatelessWidget, Widget;
 
 class ReusableCard extends StatelessWidget {
-  ReusableCard({required this.colour, required this.CardChild});
+  const ReusableCard({Key? key, required this.colour, required this.CardChild}) : super(key: key);
 
   final Color colour;
   final Widget CardChild;
