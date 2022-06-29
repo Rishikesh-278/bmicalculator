@@ -35,17 +35,10 @@ import 'package:flutter/material.dart'
         TextBaseline,
         TextStyle,
         Widget;
-import 'package:font_awesome_flutter/font_awesome_flutter.dart'
-    show FontAwesomeIcons;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart' show FontAwesomeIcons;
 import 'package:bmicalculator/reusable_card.dart' show ReusableCard;
 import 'icon_content.dart' show IconContent;
-import 'constants.dart'
-    show
-        kActiveCardColor,
-        kBottomContainerColor,
-        kInActiveCardColor,
-        kLabelTextStyle,
-        kNumberTextsStyle;
+import 'constants.dart' show kActiveCardColor, kBottomContainerColor, kInActiveCardColor, kLabelTextStyle, kNumberTextsStyle;
 
 enum Gender { male, female }
 
