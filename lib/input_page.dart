@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart' show FontAwesomeIcons;
-import 'package:bmicalculator/reusable_card.dart' show ReusableCard;
-import 'icon_content.dart' show IconContent;
-import 'constants.dart' show kActiveCardColor, kBottomContainerColor, kInActiveCardColor, kLabelTextStyle, kNumberTextsStyle;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:bmicalculator/reusable_card.dart';
+import 'icon_content.dart';
+import 'constants.dart';
 import 'package:bmicalculator/result.dart';
 
 enum Gender { male, female }
@@ -192,7 +192,7 @@ class _InputPageState extends State<InputPage> {
               Navigator.push(context, MaterialPageRoute(builder: (context) => resultPage()));
             },
             child: Container(
-              child: Text("CALCULATE"),
+              child: Center(child: Text("CALCULATE", style: kLargeButtonTextStyle)),
               color: kBottomContainerColor,
               margin: const EdgeInsets.only(top: 10),
               height: 80,

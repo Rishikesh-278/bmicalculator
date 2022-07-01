@@ -7,3 +7,5 @@ const kBottomContainerHeight = 80;
 
 const kLabelTextStyle = TextStyle(color: Colors.white, fontSize: 18);
 const kNumberTextsStyle = TextStyle(fontSize: 50, fontWeight: FontWeight.w900);
+
+const kLargeButtonTextStyle = TextStyle(fontSize: 25,fontWeight: FontWeight.bold);
