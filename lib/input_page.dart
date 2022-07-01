@@ -1,44 +1,9 @@
-import 'package:flutter/material.dart'
-    show
-        AppBar,
-        BoxConstraints,
-        BuildContext,
-        CircleBorder,
-        Color,
-        Colors,
-        Column,
-        Container,
-        CrossAxisAlignment,
-        EdgeInsets,
-        Expanded,
-        FloatingActionButton,
-        FontWeight,
-        GestureDetector,
-        Icon,
-        IconData,
-        Icons,
-        Key,
-        MainAxisAlignment,
-        RawMaterialButton,
-        RoundSliderOverlayShape,
-        RoundSliderThumbShape,
-        Row,
-        Scaffold,
-        SizedBox,
-        Slider,
-        SliderTheme,
-        SliderThemeData,
-        State,
-        StatefulWidget,
-        StatelessWidget,
-        Text,
-        TextBaseline,
-        TextStyle,
-        Widget;
+import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart' show FontAwesomeIcons;
 import 'package:bmicalculator/reusable_card.dart' show ReusableCard;
 import 'icon_content.dart' show IconContent;
 import 'constants.dart' show kActiveCardColor, kBottomContainerColor, kInActiveCardColor, kLabelTextStyle, kNumberTextsStyle;
+import 'package:bmicalculator/result.dart';
 
 enum Gender { male, female }
 
@@ -222,11 +187,17 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
-          Container(
-            color: kBottomContainerColor,
-            margin: const EdgeInsets.only(top: 10),
-            height: 80,
-            width: double.infinity,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => resultPage()));
+            },
+            child: Container(
+              child: Text("CALCULATE"),
+              color: kBottomContainerColor,
+              margin: const EdgeInsets.only(top: 10),
+              height: 80,
+              width: double.infinity,
+            ),
           )
         ],
       ),
