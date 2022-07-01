@@ -1,3 +1,4 @@
+import 'package:bmicalculator/components/bottom_button.dart';
 import 'package:bmicalculator/constants.dart';
 import 'package:bmicalculator/components/reusable_card.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class resultPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Your Result"),
+        title: const Text("BMI calculator"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -18,7 +19,7 @@ class resultPage extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              child: Text(
+              child: const Text(
                 "Your Result",
                 style: kTitleTextStyle,
               ),
@@ -31,7 +32,7 @@ class resultPage extends StatelessWidget {
                 CardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
+                  children: const <Widget>[
                     Text(
                       "Normal",
                       style: kResultTextStyle,
@@ -47,7 +48,11 @@ class resultPage extends StatelessWidget {
                     )
                   ],
                 ),
-              ))
+              ),
+          ),
+          BottomButton(onTap: (){
+            Navigator.pop(context);
+          }, buttonTitle: 'RECALCULATE')
         ],
       ),
     );

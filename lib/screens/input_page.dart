@@ -6,7 +6,6 @@ import 'package:bmicalculator/components/reusable_card.dart';
 import '../components/bottom_button.dart';
 import '../components/icon_content.dart';
 import '../constants.dart';
-import 'package:bmicalculator/result.dart';
 
 
 enum Gender { male, female }
