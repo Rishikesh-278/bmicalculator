@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart' show BuildContext, Colors, Column, Icon, IconData, Key, MainAxisAlignment, SizedBox, StatelessWidget, Text, TextStyle, Widget;
-import 'constants.dart';
+import '../../constants.dart';
 
 
 
