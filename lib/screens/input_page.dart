@@ -199,8 +199,4 @@ class _InputPageState extends State<InputPage> {
   }
 }
 
-
-
-
-
 //0XFF1D1E33
